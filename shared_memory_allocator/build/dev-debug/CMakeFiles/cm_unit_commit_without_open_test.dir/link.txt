@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_commit_without_open_test.dir/tests/unit/test_cm_commit_without_open.c.o -o cm_unit_commit_without_open_test  libcm_core.a 

@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_kmeans_resume_test.dir/tests/integration/test_kmeans_cm_resume.c.o -o cm_integration_kmeans_resume_test  libcm_app_kmeans_lib.a libcm_core.a libcm_integration_test_helpers.a libcm_core.a 

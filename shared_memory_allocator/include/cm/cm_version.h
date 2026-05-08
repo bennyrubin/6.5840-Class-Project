@@ -1,0 +1,8 @@
+#ifndef CM_VERSION_H
+#define CM_VERSION_H
+
+#define CM_API_VERSION_MAJOR 0
+#define CM_API_VERSION_MINOR 1
+#define CM_API_VERSION_PATCH 0
+
+#endif

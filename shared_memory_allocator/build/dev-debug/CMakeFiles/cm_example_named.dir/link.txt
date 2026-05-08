@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_example_named.dir/examples/named_allocation_usage.c.o -o cm_example_named  libcm_core.a 

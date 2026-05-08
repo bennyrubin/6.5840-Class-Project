@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_simple_verify.dir/tests/integration/apps/simple_verify_app.c.o -o cm_integration_simple_verify  libcm_core.a 

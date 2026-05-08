@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_named_test.dir/tests/unit/test_cm_named.c.o -o cm_unit_named_test  libcm_core.a 

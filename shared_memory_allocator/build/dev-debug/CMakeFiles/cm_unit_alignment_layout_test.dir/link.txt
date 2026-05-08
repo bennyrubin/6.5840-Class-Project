@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_alignment_layout_test.dir/tests/unit/test_alignment_layout.c.o -o cm_unit_alignment_layout_test  libcm_core.a 

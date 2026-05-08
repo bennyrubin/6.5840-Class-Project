@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_app_sort.dir/apps/sort/main.c.o -o cm_app_sort  libcm_app_sort_lib.a libcm_core.a 

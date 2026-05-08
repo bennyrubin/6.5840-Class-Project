@@ -1,0 +1,595 @@
+Start testing: May 04 16:45 UTC
+----------------------------------------------------------
+1/39 Testing: cm_unit_open_test
+1/39 Test: cm_unit_open_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_open_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_open_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_open_test" end time: May 04 16:45 UTC
+"cm_unit_open_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/39 Testing: cm_unit_open_invalid_args_test
+2/39 Test: cm_unit_open_invalid_args_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_open_invalid_args_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_open_invalid_args_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_open_invalid_args_test" end time: May 04 16:45 UTC
+"cm_unit_open_invalid_args_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/39 Testing: cm_unit_open_double_open_requires_close_test
+3/39 Test: cm_unit_open_double_open_requires_close_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_open_double_open_requires_close_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_open_double_open_requires_close_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_open_double_open_requires_close_test" end time: May 04 16:45 UTC
+"cm_unit_open_double_open_requires_close_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/39 Testing: cm_unit_open_deterministic_base_test
+4/39 Test: cm_unit_open_deterministic_base_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_open_deterministic_base_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_open_deterministic_base_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_open_deterministic_base_test" end time: May 04 16:45 UTC
+"cm_unit_open_deterministic_base_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/39 Testing: cm_unit_open_undo_capacity_test
+5/39 Test: cm_unit_open_undo_capacity_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_open_undo_capacity_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_open_undo_capacity_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_open_undo_capacity_test" end time: May 04 16:45 UTC
+"cm_unit_open_undo_capacity_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/39 Testing: cm_unit_close_test
+6/39 Test: cm_unit_close_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_close_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_close_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_close_test" end time: May 04 16:45 UTC
+"cm_unit_close_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/39 Testing: cm_unit_close_unlinks_test
+7/39 Test: cm_unit_close_unlinks_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_close_unlinks_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_close_unlinks_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_close_unlinks_test" end time: May 04 16:45 UTC
+"cm_unit_close_unlinks_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/39 Testing: cm_unit_alloc_test
+8/39 Test: cm_unit_alloc_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_alloc_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_alloc_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_alloc_test" end time: May 04 16:45 UTC
+"cm_unit_alloc_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/39 Testing: cm_unit_free_test
+9/39 Test: cm_unit_free_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_free_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_free_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_free_test" end time: May 04 16:45 UTC
+"cm_unit_free_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/39 Testing: cm_unit_realloc_test
+10/39 Test: cm_unit_realloc_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_realloc_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_realloc_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_realloc_test" end time: May 04 16:45 UTC
+"cm_unit_realloc_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/39 Testing: cm_unit_realloc_edge_cases_test
+11/39 Test: cm_unit_realloc_edge_cases_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_realloc_edge_cases_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_realloc_edge_cases_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_realloc_edge_cases_test" end time: May 04 16:45 UTC
+"cm_unit_realloc_edge_cases_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/39 Testing: cm_unit_named_test
+12/39 Test: cm_unit_named_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_named_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_named_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_named_test" end time: May 04 16:45 UTC
+"cm_unit_named_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/39 Testing: cm_unit_commit_test
+13/39 Test: cm_unit_commit_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_commit_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_commit_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_commit_test" end time: May 04 16:45 UTC
+"cm_unit_commit_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/39 Testing: cm_unit_commit_policy_test
+14/39 Test: cm_unit_commit_policy_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_commit_policy_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_commit_policy_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_commit_policy_test" end time: May 04 16:45 UTC
+"cm_unit_commit_policy_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/39 Testing: cm_unit_commit_without_open_test
+15/39 Test: cm_unit_commit_without_open_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_commit_without_open_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_commit_without_open_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_commit_without_open_test" end time: May 04 16:45 UTC
+"cm_unit_commit_without_open_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/39 Testing: cm_unit_alloc_edge_cases_test
+16/39 Test: cm_unit_alloc_edge_cases_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_alloc_edge_cases_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_alloc_edge_cases_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_alloc_edge_cases_test" end time: May 04 16:45 UTC
+"cm_unit_alloc_edge_cases_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/39 Testing: cm_unit_named_error_paths_test
+17/39 Test: cm_unit_named_error_paths_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_named_error_paths_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_named_error_paths_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_named_error_paths_test" end time: May 04 16:45 UTC
+"cm_unit_named_error_paths_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/39 Testing: cm_unit_open_existing_layout_errors_test
+18/39 Test: cm_unit_open_existing_layout_errors_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_open_existing_layout_errors_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_open_existing_layout_errors_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_open_existing_layout_errors_test" end time: May 04 16:45 UTC
+"cm_unit_open_existing_layout_errors_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/39 Testing: cm_unit_metadata_layout_test
+19/39 Test: cm_unit_metadata_layout_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_metadata_layout_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_metadata_layout_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_metadata_layout_test" end time: May 04 16:45 UTC
+"cm_unit_metadata_layout_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/39 Testing: cm_unit_alignment_layout_test
+20/39 Test: cm_unit_alignment_layout_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_alignment_layout_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_alignment_layout_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_alignment_layout_test" end time: May 04 16:45 UTC
+"cm_unit_alignment_layout_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/39 Testing: cm_unit_undo_log_integrity_test
+21/39 Test: cm_unit_undo_log_integrity_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_undo_log_integrity_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_undo_log_integrity_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_undo_log_integrity_test" end time: May 04 16:45 UTC
+"cm_unit_undo_log_integrity_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/39 Testing: cm_unit_metadata_corruption_test
+22/39 Test: cm_unit_metadata_corruption_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_metadata_corruption_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_metadata_corruption_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_metadata_corruption_test" end time: May 04 16:45 UTC
+"cm_unit_metadata_corruption_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/39 Testing: cm_integration_crash_recovery_test
+23/39 Test: cm_integration_crash_recovery_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_crash_recovery_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_crash_recovery_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_crash_recovery_test" end time: May 04 16:45 UTC
+"cm_integration_crash_recovery_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/39 Testing: cm_integration_checkpoint_flow_test
+24/39 Test: cm_integration_checkpoint_flow_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_checkpoint_flow_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_checkpoint_flow_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_checkpoint_flow_test" end time: May 04 16:45 UTC
+"cm_integration_checkpoint_flow_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/39 Testing: cm_integration_reopen_consistency_test
+25/39 Test: cm_integration_reopen_consistency_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_reopen_consistency_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_reopen_consistency_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_reopen_consistency_test" end time: May 04 16:45 UTC
+"cm_integration_reopen_consistency_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/39 Testing: cm_integration_crash_matrix_test
+26/39 Test: cm_integration_crash_matrix_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_crash_matrix_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_crash_matrix_test" start time: May 04 16:45 UTC
+Output:
+----------------------------------------------------------
+[cm][crash_point] abort at after_undo_copy_before_append
+[cm][crash_point] abort at after_undo_append_before_unprotect
+[cm][crash_point] abort at during_commit_after_reset_before_reprotect
+[cm][crash_point] abort at after_undo_append_before_unprotect
+[cm][crash_point] abort at during_recovery_after_copy_before_pop
+<end of output>
+Test time =   5.75 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_crash_matrix_test" end time: May 04 16:46 UTC
+"cm_integration_crash_matrix_test" time elapsed: 00:00:05
+----------------------------------------------------------
+
+27/39 Testing: cm_integration_named_lifecycle_recovery_test
+27/39 Test: cm_integration_named_lifecycle_recovery_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_named_lifecycle_recovery_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_named_lifecycle_recovery_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_named_lifecycle_recovery_test" end time: May 04 16:46 UTC
+"cm_integration_named_lifecycle_recovery_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+28/39 Testing: cm_integration_commit_persists_test
+28/39 Test: cm_integration_commit_persists_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_commit_persists_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_commit_persists_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_commit_persists_test" end time: May 04 16:46 UTC
+"cm_integration_commit_persists_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+29/39 Testing: cm_integration_realloc_free_commit_persists_test
+29/39 Test: cm_integration_realloc_free_commit_persists_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_realloc_free_commit_persists_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_realloc_free_commit_persists_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_realloc_free_commit_persists_test" end time: May 04 16:46 UTC
+"cm_integration_realloc_free_commit_persists_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+30/39 Testing: cm_integration_uncommitted_rolls_back_test
+30/39 Test: cm_integration_uncommitted_rolls_back_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_uncommitted_rolls_back_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_uncommitted_rolls_back_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_uncommitted_rolls_back_test" end time: May 04 16:46 UTC
+"cm_integration_uncommitted_rolls_back_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+31/39 Testing: cm_integration_realloc_free_uncommitted_rolls_back_test
+31/39 Test: cm_integration_realloc_free_uncommitted_rolls_back_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_realloc_free_uncommitted_rolls_back_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_realloc_free_uncommitted_rolls_back_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_realloc_free_uncommitted_rolls_back_test" end time: May 04 16:46 UTC
+"cm_integration_realloc_free_uncommitted_rolls_back_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+32/39 Testing: cm_integration_multi_page_cow_test
+32/39 Test: cm_integration_multi_page_cow_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_multi_page_cow_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_multi_page_cow_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_multi_page_cow_test" end time: May 04 16:46 UTC
+"cm_integration_multi_page_cow_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+33/39 Testing: cm_integration_recovery_idempotence_test
+33/39 Test: cm_integration_recovery_idempotence_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_recovery_idempotence_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_recovery_idempotence_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+[cm][crash_point] abort at after_undo_append_before_unprotect
+[cm][crash_point] abort at during_recovery_after_copy_before_pop
+<end of output>
+Test time =   2.30 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_recovery_idempotence_test" end time: May 04 16:46 UTC
+"cm_integration_recovery_idempotence_test" time elapsed: 00:00:02
+----------------------------------------------------------
+
+34/39 Testing: cm_integration_kmeans_resume_test
+34/39 Test: cm_integration_kmeans_resume_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_kmeans_resume_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_kmeans_resume_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.65 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_kmeans_resume_test" end time: May 04 16:46 UTC
+"cm_integration_kmeans_resume_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/39 Testing: cm_unit_named_realloc_test
+35/39 Test: cm_unit_named_realloc_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_named_realloc_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_named_realloc_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_named_realloc_test" end time: May 04 16:46 UTC
+"cm_unit_named_realloc_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/39 Testing: cm_unit_named_realloc_shrink_test
+36/39 Test: cm_unit_named_realloc_shrink_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_named_realloc_shrink_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_named_realloc_shrink_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_named_realloc_shrink_test" end time: May 04 16:46 UTC
+"cm_unit_named_realloc_shrink_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/39 Testing: cm_unit_named_realloc_edge_cases_test
+37/39 Test: cm_unit_named_realloc_edge_cases_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_named_realloc_edge_cases_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_named_realloc_edge_cases_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_named_realloc_edge_cases_test" end time: May 04 16:46 UTC
+"cm_unit_named_realloc_edge_cases_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/39 Testing: cm_unit_named_realloc_free_list_reuse_test
+38/39 Test: cm_unit_named_realloc_free_list_reuse_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_unit_named_realloc_free_list_reuse_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_unit_named_realloc_free_list_reuse_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cm_unit_named_realloc_free_list_reuse_test" end time: May 04 16:46 UTC
+"cm_unit_named_realloc_free_list_reuse_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/39 Testing: cm_integration_named_realloc_commit_persists_test
+39/39 Test: cm_integration_named_realloc_commit_persists_test
+Command: "/home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug/cm_integration_named_realloc_commit_persists_test"
+Directory: /home/benny/snapshot-project/libs/shared_memory_allocator/build/dev-debug
+"cm_integration_named_realloc_commit_persists_test" start time: May 04 16:46 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   1.15 sec
+----------------------------------------------------------
+Test Passed.
+"cm_integration_named_realloc_commit_persists_test" end time: May 04 16:46 UTC
+"cm_integration_named_realloc_commit_persists_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: May 04 16:46 UTC

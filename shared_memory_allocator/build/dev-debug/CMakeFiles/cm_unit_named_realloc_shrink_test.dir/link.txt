@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_named_realloc_shrink_test.dir/tests/unit/test_cm_named_realloc_shrink.c.o -o cm_unit_named_realloc_shrink_test  libcm_core.a 

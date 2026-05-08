@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_example_minimal.dir/examples/minimal_usage.c.o -o cm_example_minimal  libcm_core.a 

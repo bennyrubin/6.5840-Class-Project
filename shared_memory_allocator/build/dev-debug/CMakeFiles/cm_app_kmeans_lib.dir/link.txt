@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcm_app_kmeans_lib.a CMakeFiles/cm_app_kmeans_lib.dir/apps/kmeans/kmeans.c.o
+/usr/bin/ranlib libcm_app_kmeans_lib.a

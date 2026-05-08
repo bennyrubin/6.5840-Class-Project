@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcm_integration_test_helpers.a CMakeFiles/cm_integration_test_helpers.dir/tests/integration/test_helpers.c.o
+/usr/bin/ranlib libcm_integration_test_helpers.a

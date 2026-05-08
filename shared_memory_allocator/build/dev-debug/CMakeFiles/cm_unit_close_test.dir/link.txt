@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_close_test.dir/tests/unit/test_cm_close.c.o -o cm_unit_close_test  libcm_core.a 

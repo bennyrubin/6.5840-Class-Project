@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_close_unlinks_test.dir/tests/unit/test_cm_close_unlinks.c.o -o cm_unit_close_unlinks_test  libcm_core.a 

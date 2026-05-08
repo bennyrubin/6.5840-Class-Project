@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_realloc_free_commit_persists_test.dir/tests/integration/test_realloc_free_commit_persists.c.o -o cm_integration_realloc_free_commit_persists_test  libcm_core.a libcm_integration_test_helpers.a libcm_core.a 

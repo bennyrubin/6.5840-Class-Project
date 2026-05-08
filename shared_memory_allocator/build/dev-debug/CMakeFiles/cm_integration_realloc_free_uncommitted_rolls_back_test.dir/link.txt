@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_realloc_free_uncommitted_rolls_back_test.dir/tests/integration/test_realloc_free_uncommitted_rolls_back.c.o -o cm_integration_realloc_free_uncommitted_rolls_back_test  libcm_core.a libcm_integration_test_helpers.a libcm_core.a 

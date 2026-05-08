@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_reopen_consistency_test.dir/tests/integration/test_reopen_consistency.c.o -o cm_integration_reopen_consistency_test  libcm_core.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcm_app_sort_lib.a CMakeFiles/cm_app_sort_lib.dir/apps/sort/sort.c.o
+/usr/bin/ranlib libcm_app_sort_lib.a

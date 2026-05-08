@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_commit_policy_test.dir/tests/unit/test_cm_commit_policy.c.o -o cm_unit_commit_policy_test  libcm_core.a 

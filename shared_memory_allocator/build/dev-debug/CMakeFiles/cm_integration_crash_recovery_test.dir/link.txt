@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_crash_recovery_test.dir/tests/integration/test_crash_recovery.c.o -o cm_integration_crash_recovery_test  libcm_core.a 

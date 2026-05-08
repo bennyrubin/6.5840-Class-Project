@@ -1,0 +1,264 @@
+cmake_minimum_required(VERSION 3.20)
+project(shared_memory_allocator LANGUAGES C)
+
+add_library(cm_core STATIC
+  src/cm_api.c
+  src/inspect.c
+  src/mapping.c
+  src/metadata.c
+  src/undo_log.c
+  src/fault_handler.c
+  src/commit.c
+  src/commit_policy.c
+  src/recovery.c
+  src/allocator.c
+  src/trace.c
+  src/layout.c
+)
+set_target_properties(cm_core PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+target_include_directories(cm_core
+  PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
+
+target_compile_features(cm_core PUBLIC c_std_11)
+target_compile_definitions(cm_core
+  PRIVATE
+    $<$<CONFIG:Debug>:CM_DEBUG=1>
+)
+
+add_executable(cm_example_minimal examples/minimal_usage.c)
+target_link_libraries(cm_example_minimal PRIVATE cm_core)
+
+add_executable(cm_example_named examples/named_allocation_usage.c)
+target_link_libraries(cm_example_named PRIVATE cm_core)
+
+add_library(cm_app_kmeans_lib STATIC apps/kmeans/kmeans.c)
+target_include_directories(cm_app_kmeans_lib
+  PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/apps/kmeans
+)
+target_link_libraries(cm_app_kmeans_lib PUBLIC cm_core)
+target_compile_features(cm_app_kmeans_lib PUBLIC c_std_11)
+
+add_executable(cm_app_kmeans apps/kmeans/main.c)
+target_link_libraries(cm_app_kmeans PRIVATE cm_app_kmeans_lib)
+target_compile_definitions(cm_app_kmeans
+  PRIVATE
+    CM_KMEANS_DEFAULT_DATA_PATH="${CMAKE_CURRENT_SOURCE_DIR}/apps/kmeans/data/points.csv"
+)
+
+add_library(cm_app_sort_lib STATIC apps/sort/sort.c)
+target_include_directories(cm_app_sort_lib
+  PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/apps/sort
+)
+target_link_libraries(cm_app_sort_lib PUBLIC cm_core)
+target_compile_features(cm_app_sort_lib PUBLIC c_std_11)
+
+add_executable(cm_app_sort apps/sort/main.c)
+target_link_libraries(cm_app_sort PRIVATE cm_app_sort_lib)
+target_compile_definitions(cm_app_sort
+  PRIVATE
+    CM_SORT_DEFAULT_DATA_PATH="${CMAKE_CURRENT_SOURCE_DIR}/apps/sort/data/ids.csv"
+)
+
+add_executable(cm_integration_simple_writer tests/integration/apps/simple_writer_app.c)
+target_link_libraries(cm_integration_simple_writer PRIVATE cm_core)
+
+add_executable(cm_integration_simple_verify tests/integration/apps/simple_verify_app.c)
+target_link_libraries(cm_integration_simple_verify PRIVATE cm_core)
+
+add_executable(cm_dump_shm tools/cm_dump_shm.c)
+target_link_libraries(cm_dump_shm PRIVATE cm_core)
+
+add_library(cm_integration_test_helpers STATIC tests/integration/test_helpers.c)
+target_include_directories(cm_integration_test_helpers
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/tests/integration
+)
+target_link_libraries(cm_integration_test_helpers PRIVATE cm_core)
+
+enable_testing()
+
+add_executable(cm_unit_open_test tests/unit/test_cm_open.c)
+target_link_libraries(cm_unit_open_test PRIVATE cm_core)
+add_test(NAME cm_unit_open_test COMMAND cm_unit_open_test)
+
+add_executable(cm_unit_open_invalid_args_test tests/unit/test_cm_open_invalid_args.c)
+target_link_libraries(cm_unit_open_invalid_args_test PRIVATE cm_core)
+add_test(NAME cm_unit_open_invalid_args_test COMMAND cm_unit_open_invalid_args_test)
+
+add_executable(cm_unit_open_double_open_requires_close_test
+  tests/unit/test_cm_open_double_open_requires_close.c)
+target_link_libraries(cm_unit_open_double_open_requires_close_test PRIVATE cm_core)
+add_test(NAME cm_unit_open_double_open_requires_close_test
+  COMMAND cm_unit_open_double_open_requires_close_test)
+
+add_executable(cm_unit_open_deterministic_base_test tests/unit/test_cm_open_deterministic_base.c)
+target_link_libraries(cm_unit_open_deterministic_base_test PRIVATE cm_core)
+add_test(NAME cm_unit_open_deterministic_base_test COMMAND cm_unit_open_deterministic_base_test)
+
+add_executable(cm_unit_open_undo_capacity_test tests/unit/test_cm_open_undo_capacity.c)
+target_link_libraries(cm_unit_open_undo_capacity_test PRIVATE cm_core)
+add_test(NAME cm_unit_open_undo_capacity_test COMMAND cm_unit_open_undo_capacity_test)
+
+add_executable(cm_unit_close_test tests/unit/test_cm_close.c)
+target_link_libraries(cm_unit_close_test PRIVATE cm_core)
+add_test(NAME cm_unit_close_test COMMAND cm_unit_close_test)
+
+add_executable(cm_unit_close_unlinks_test tests/unit/test_cm_close_unlinks.c)
+target_link_libraries(cm_unit_close_unlinks_test PRIVATE cm_core)
+add_test(NAME cm_unit_close_unlinks_test COMMAND cm_unit_close_unlinks_test)
+
+add_executable(cm_unit_alloc_test tests/unit/test_cm_alloc.c)
+target_link_libraries(cm_unit_alloc_test PRIVATE cm_core)
+add_test(NAME cm_unit_alloc_test COMMAND cm_unit_alloc_test)
+
+add_executable(cm_unit_free_test tests/unit/test_cm_free.c)
+target_link_libraries(cm_unit_free_test PRIVATE cm_core)
+add_test(NAME cm_unit_free_test COMMAND cm_unit_free_test)
+
+add_executable(cm_unit_realloc_test tests/unit/test_cm_realloc.c)
+target_link_libraries(cm_unit_realloc_test PRIVATE cm_core)
+add_test(NAME cm_unit_realloc_test COMMAND cm_unit_realloc_test)
+
+add_executable(cm_unit_realloc_edge_cases_test tests/unit/test_cm_realloc_edge_cases.c)
+target_link_libraries(cm_unit_realloc_edge_cases_test PRIVATE cm_core)
+add_test(NAME cm_unit_realloc_edge_cases_test COMMAND cm_unit_realloc_edge_cases_test)
+
+add_executable(cm_unit_named_test tests/unit/test_cm_named.c)
+target_link_libraries(cm_unit_named_test PRIVATE cm_core)
+add_test(NAME cm_unit_named_test COMMAND cm_unit_named_test)
+
+add_executable(cm_unit_commit_test tests/unit/test_cm_commit.c)
+target_link_libraries(cm_unit_commit_test PRIVATE cm_core)
+add_test(NAME cm_unit_commit_test COMMAND cm_unit_commit_test)
+
+add_executable(cm_unit_commit_policy_test tests/unit/test_cm_commit_policy.c)
+target_link_libraries(cm_unit_commit_policy_test PRIVATE cm_core)
+add_test(NAME cm_unit_commit_policy_test COMMAND cm_unit_commit_policy_test)
+
+add_executable(cm_unit_commit_without_open_test tests/unit/test_cm_commit_without_open.c)
+target_link_libraries(cm_unit_commit_without_open_test PRIVATE cm_core)
+add_test(NAME cm_unit_commit_without_open_test COMMAND cm_unit_commit_without_open_test)
+
+add_executable(cm_unit_alloc_edge_cases_test tests/unit/test_cm_alloc_edge_cases.c)
+target_link_libraries(cm_unit_alloc_edge_cases_test PRIVATE cm_core)
+add_test(NAME cm_unit_alloc_edge_cases_test COMMAND cm_unit_alloc_edge_cases_test)
+
+add_executable(cm_unit_named_error_paths_test tests/unit/test_cm_named_error_paths.c)
+target_link_libraries(cm_unit_named_error_paths_test PRIVATE cm_core)
+add_test(NAME cm_unit_named_error_paths_test COMMAND cm_unit_named_error_paths_test)
+
+add_executable(cm_unit_open_existing_layout_errors_test
+  tests/unit/test_cm_open_existing_layout_errors.c)
+target_link_libraries(cm_unit_open_existing_layout_errors_test PRIVATE cm_core)
+add_test(NAME cm_unit_open_existing_layout_errors_test
+  COMMAND cm_unit_open_existing_layout_errors_test)
+
+add_executable(cm_unit_metadata_layout_test tests/unit/test_metadata_layout.c)
+target_link_libraries(cm_unit_metadata_layout_test PRIVATE cm_core)
+add_test(NAME cm_unit_metadata_layout_test COMMAND cm_unit_metadata_layout_test)
+
+add_executable(cm_unit_alignment_layout_test tests/unit/test_alignment_layout.c)
+target_link_libraries(cm_unit_alignment_layout_test PRIVATE cm_core)
+add_test(NAME cm_unit_alignment_layout_test COMMAND cm_unit_alignment_layout_test)
+
+add_executable(cm_unit_undo_log_integrity_test tests/unit/test_undo_log_integrity.c)
+target_link_libraries(cm_unit_undo_log_integrity_test PRIVATE cm_core)
+add_test(NAME cm_unit_undo_log_integrity_test COMMAND cm_unit_undo_log_integrity_test)
+
+add_executable(cm_unit_metadata_corruption_test tests/unit/test_metadata_corruption.c)
+target_link_libraries(cm_unit_metadata_corruption_test PRIVATE cm_core)
+add_test(NAME cm_unit_metadata_corruption_test COMMAND cm_unit_metadata_corruption_test)
+
+add_executable(cm_integration_crash_recovery_test tests/integration/test_crash_recovery.c)
+target_link_libraries(cm_integration_crash_recovery_test PRIVATE cm_core)
+add_test(NAME cm_integration_crash_recovery_test COMMAND cm_integration_crash_recovery_test)
+
+add_executable(cm_integration_checkpoint_flow_test tests/integration/test_checkpoint_flow.c)
+target_link_libraries(cm_integration_checkpoint_flow_test PRIVATE cm_core)
+add_test(NAME cm_integration_checkpoint_flow_test COMMAND cm_integration_checkpoint_flow_test)
+
+add_executable(cm_integration_reopen_consistency_test tests/integration/test_reopen_consistency.c)
+target_link_libraries(cm_integration_reopen_consistency_test PRIVATE cm_core)
+add_test(NAME cm_integration_reopen_consistency_test COMMAND cm_integration_reopen_consistency_test)
+
+add_executable(cm_integration_crash_matrix_test tests/integration/test_crash_matrix.c)
+target_link_libraries(cm_integration_crash_matrix_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_crash_matrix_test COMMAND cm_integration_crash_matrix_test)
+
+add_executable(cm_integration_named_lifecycle_recovery_test tests/integration/test_named_lifecycle_recovery.c)
+target_link_libraries(cm_integration_named_lifecycle_recovery_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_named_lifecycle_recovery_test COMMAND cm_integration_named_lifecycle_recovery_test)
+
+add_executable(cm_integration_commit_persists_test tests/integration/test_commit_persists.c)
+target_link_libraries(cm_integration_commit_persists_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_commit_persists_test COMMAND cm_integration_commit_persists_test)
+
+add_executable(cm_integration_realloc_free_commit_persists_test
+  tests/integration/test_realloc_free_commit_persists.c)
+target_link_libraries(cm_integration_realloc_free_commit_persists_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(
+  NAME cm_integration_realloc_free_commit_persists_test
+  COMMAND cm_integration_realloc_free_commit_persists_test)
+
+add_executable(cm_integration_uncommitted_rolls_back_test tests/integration/test_uncommitted_rolls_back.c)
+target_link_libraries(cm_integration_uncommitted_rolls_back_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_uncommitted_rolls_back_test COMMAND cm_integration_uncommitted_rolls_back_test)
+
+add_executable(cm_integration_realloc_free_uncommitted_rolls_back_test
+  tests/integration/test_realloc_free_uncommitted_rolls_back.c)
+target_link_libraries(
+  cm_integration_realloc_free_uncommitted_rolls_back_test
+  PRIVATE
+    cm_core
+    cm_integration_test_helpers)
+add_test(
+  NAME cm_integration_realloc_free_uncommitted_rolls_back_test
+  COMMAND cm_integration_realloc_free_uncommitted_rolls_back_test)
+
+add_executable(cm_integration_multi_page_cow_test tests/integration/test_multi_page_cow.c)
+target_link_libraries(cm_integration_multi_page_cow_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_multi_page_cow_test COMMAND cm_integration_multi_page_cow_test)
+
+add_executable(cm_integration_recovery_idempotence_test tests/integration/test_recovery_idempotence.c)
+target_link_libraries(cm_integration_recovery_idempotence_test PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_recovery_idempotence_test COMMAND cm_integration_recovery_idempotence_test)
+
+add_executable(cm_integration_kmeans_resume_test tests/integration/test_kmeans_cm_resume.c)
+target_link_libraries(cm_integration_kmeans_resume_test PRIVATE cm_app_kmeans_lib cm_core cm_integration_test_helpers)
+target_compile_definitions(cm_integration_kmeans_resume_test
+  PRIVATE
+    CM_KMEANS_TEST_DATA_PATH="${CMAKE_CURRENT_SOURCE_DIR}/apps/kmeans/data/points.csv"
+)
+add_test(NAME cm_integration_kmeans_resume_test COMMAND cm_integration_kmeans_resume_test)
+
+add_executable(cm_unit_named_realloc_test tests/unit/test_cm_named_realloc.c)
+target_link_libraries(cm_unit_named_realloc_test PRIVATE cm_core)
+add_test(NAME cm_unit_named_realloc_test COMMAND cm_unit_named_realloc_test)
+
+add_executable(cm_unit_named_realloc_shrink_test tests/unit/test_cm_named_realloc_shrink.c)
+target_link_libraries(cm_unit_named_realloc_shrink_test PRIVATE cm_core)
+add_test(NAME cm_unit_named_realloc_shrink_test COMMAND cm_unit_named_realloc_shrink_test)
+
+add_executable(cm_unit_named_realloc_edge_cases_test tests/unit/test_cm_named_realloc_edge_cases.c)
+target_link_libraries(cm_unit_named_realloc_edge_cases_test PRIVATE cm_core)
+add_test(NAME cm_unit_named_realloc_edge_cases_test COMMAND cm_unit_named_realloc_edge_cases_test)
+
+add_executable(cm_unit_named_realloc_free_list_reuse_test
+  tests/unit/test_cm_named_realloc_free_list_reuse.c)
+target_link_libraries(cm_unit_named_realloc_free_list_reuse_test PRIVATE cm_core)
+add_test(NAME cm_unit_named_realloc_free_list_reuse_test
+  COMMAND cm_unit_named_realloc_free_list_reuse_test)
+
+add_executable(cm_integration_named_realloc_commit_persists_test
+  tests/integration/test_named_realloc_commit_persists.c)
+target_link_libraries(cm_integration_named_realloc_commit_persists_test
+  PRIVATE cm_core cm_integration_test_helpers)
+add_test(NAME cm_integration_named_realloc_commit_persists_test
+  COMMAND cm_integration_named_realloc_commit_persists_test)

@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_named_error_paths_test.dir/tests/unit/test_cm_named_error_paths.c.o -o cm_unit_named_error_paths_test  libcm_core.a 

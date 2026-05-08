@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_alloc_edge_cases_test.dir/tests/unit/test_cm_alloc_edge_cases.c.o -o cm_unit_alloc_edge_cases_test  libcm_core.a 

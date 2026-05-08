@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_multi_page_cow_test.dir/tests/integration/test_multi_page_cow.c.o -o cm_integration_multi_page_cow_test  libcm_core.a libcm_integration_test_helpers.a libcm_core.a 

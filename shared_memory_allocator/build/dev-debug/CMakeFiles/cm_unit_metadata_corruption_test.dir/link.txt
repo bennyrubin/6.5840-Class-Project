@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_metadata_corruption_test.dir/tests/unit/test_metadata_corruption.c.o -o cm_unit_metadata_corruption_test  libcm_core.a 

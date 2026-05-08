@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_integration_simple_writer.dir/tests/integration/apps/simple_writer_app.c.o -o cm_integration_simple_writer  libcm_core.a 

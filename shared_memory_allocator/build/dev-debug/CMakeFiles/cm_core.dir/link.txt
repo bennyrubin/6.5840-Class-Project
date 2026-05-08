@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcm_core.a CMakeFiles/cm_core.dir/src/cm_api.c.o CMakeFiles/cm_core.dir/src/inspect.c.o CMakeFiles/cm_core.dir/src/mapping.c.o CMakeFiles/cm_core.dir/src/metadata.c.o CMakeFiles/cm_core.dir/src/undo_log.c.o CMakeFiles/cm_core.dir/src/fault_handler.c.o CMakeFiles/cm_core.dir/src/commit.c.o CMakeFiles/cm_core.dir/src/commit_policy.c.o CMakeFiles/cm_core.dir/src/recovery.c.o CMakeFiles/cm_core.dir/src/allocator.c.o CMakeFiles/cm_core.dir/src/trace.c.o CMakeFiles/cm_core.dir/src/layout.c.o
+/usr/bin/ranlib libcm_core.a

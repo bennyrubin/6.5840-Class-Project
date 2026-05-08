@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_unit_commit_test.dir/tests/unit/test_cm_commit.c.o -o cm_unit_commit_test  libcm_core.a 

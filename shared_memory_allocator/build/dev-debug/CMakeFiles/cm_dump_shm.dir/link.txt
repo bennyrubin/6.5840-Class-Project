@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/cm_dump_shm.dir/tools/cm_dump_shm.c.o -o cm_dump_shm  libcm_core.a 
